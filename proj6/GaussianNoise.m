@@ -8,7 +8,7 @@ subplot(2,2,2);
 imshow(img1,map);
 title('加入Gaussian噪声图像','Fontsize',24);
 
-h1=fspecial('average',[3 3]);%建立一个3*3模板的高斯滤波器
+h1=fspecial('average',[3 3]); % 建立一个3*3模板的高斯滤波器
 img2=imfilter(img1,h1,'conv');
 subplot(2,2,3);
 imshow(img2,map);

@@ -8,10 +8,10 @@ img2=imnoise(img1,'gaussian',0,0.01);
 figure(2)
 imshow(img2);
 title('加噪并模糊的');
-figure(3);
-noise=imnoise(zeros(size(img)),'gaussian',0,0.01);
-NSR=sum(noise(:).^2)/sum(im2double(img(:)).^2);
-img3=deconvwnr(img2,H,NSR);
-imshow(img3);
-title('维纳滤波的结果');
+% figure(3);
+% noise=imnoise(zeros(size(img)),'gaussian',0,0.01);
+% NSR=sum(noise(:).^2)/sum(im2double(img(:)).^2);
+% img3=deconvwnr(img2,H,NSR);
+% imshow(img3);
+% title('维纳滤波的结果');
 
